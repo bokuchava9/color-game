@@ -1,0 +1,117 @@
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+      background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    min-height: 100vh;
+}
+.box{
+    height: 20vh;
+    width: 10vw;
+    border: 1px solid black;
+}
+.board{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    background-color: white;
+    height: 80vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.rightBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.leftBoard{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+h2{
+    font-family: "Big Shoulders Stencil", sans-serif;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+button{
+    width: 80px;
+    height: 30px;
+    font-family: "Big Shoulders Stencil", sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+button:hover{
+    transform: scale(1.2);
+}
+.modeBtn{
+    display: flex;
+    gap: 20px;
+}
+.addBt{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+.btn1{
+border-radius: 5px;
+border: none;
+background-color: greenyellow;
+}
+.btn2{
+   border-radius: 5px;
+border: none; 
+background-color: yellowgreen;
+}
+.btn3{
+    border-radius: 5px;
+border: none;
+background-color: aquamarine;
+}
+.btn4{
+    border-radius: 5px;
+border: none;
+background-color: gold;
+}
+.btn5{
+    border-radius: 5px;
+border: none;
+background-color: blueviolet;
+}
+.hover{
+    transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+.hover:hover{
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+
+@media(max-width:580px){
+   
+    .board{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        height: 10vh;
+    }
+}
